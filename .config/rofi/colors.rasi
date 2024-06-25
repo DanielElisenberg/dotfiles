@@ -1,0 +1,10 @@
+*{
+	bg: #343247;
+    bg-alt: #444;
+	fg: #cdd6f4;
+    fg-alt: #555;
+    primary: #cba6f7;
+    secondary: #94e2d5;
+    alert: #f38ba8;
+}
+

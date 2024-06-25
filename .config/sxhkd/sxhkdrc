@@ -1,0 +1,46 @@
+super + alt + r
+    bspc wm -r
+
+super + Return
+    alacritty
+
+super + b
+    chromium
+
+super + r
+    rofi -show run -config ~/.config/rofi/applications.rasi -show-icons
+
+super + g
+    bspc node -s biggest.window
+
+super + m
+    bspc desktop -l next
+
+super + s
+    bspc rule -a '*' -o state=floating rectangle=550x250+100+750 && alacritty --command cava &
+
+super + l
+    ~/.config/polybar/scripts/power_menu.sh
+
+# Toggle floating
+super + f
+    if [ -z "$(bspc query -N -n focused.floating)" ]; then \
+        bspc node focused -t floating; \
+    else \
+        bspc node focused -t tiled; \
+    fi
+
+# focus or send to the given desktop and follow
+super + {_,shift + }{1-6, 1-6}
+    bspc {desktop -f, node -d} '^{1-6,1-6}' --follow
+
+super + {_, shift +}q
+    bspc node -{c, k}
+
+super + {_,shift + } { Left, Down, Up, Right }
+        bspc node -{f,s} {west,south,north,east}
+
+# close and kill
+super + {_,shift + }q
+	bspc node -{c,k}
+
