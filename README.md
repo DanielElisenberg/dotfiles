@@ -1,6 +1,6 @@
 # dotfiles
 Dotfiles for my 5120x1440 ultrawide setup using [bspwm](https://github.com/baskerville/bspwm).
-The wallpaper is a resized version of the catppuccin totoro found in [basecamp's umakub repo](https://github.com/basecamp/omakub/blob/master/backgrounds/catppuccintotoro.png)
+The wallpaper is a resized version of the catppuccin totoro found in [basecamp's omakub repo](https://github.com/basecamp/omakub/blob/master/backgrounds/catppuccintotoro.png)
 
 
 I use arch, btw
